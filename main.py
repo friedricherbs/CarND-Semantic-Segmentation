@@ -156,11 +156,11 @@ def run():
     epochs        = 25
     batch_size    = 1
     learning_rate = tf.constant(0.0001)
-    train_network = False
-    load_cp       = True
-    augment_data  = False
+    train_network = True
+    load_cp       = False
+    augment_data  = True
     validate_nn   = True
-    save_images   = False
+    save_images   = True
 
     # Download kitti dataset
     helper.maybe_download_kitti(data_dir)
